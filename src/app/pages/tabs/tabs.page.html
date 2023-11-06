@@ -1,0 +1,32 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" #home>
+      <ion-icon
+        [name]="home.selected ? 'home' : 'home-outline'"
+        size="small"
+      ></ion-icon>
+      <ion-label> Home </ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="shorts" #shorts>
+      <ion-icon
+        [name]="shorts.selected ? 'videocam' : 'videocam-outline'"
+        size="small"
+      ></ion-icon>
+      <ion-label> Shorts </ion-label>
+    </ion-tab-button>
+    <ion-tab-button (click)="handleCreate()">
+      <ion-icon name="add-circle-outline" size="large"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="subscription" #subscription>
+      <ion-icon
+        [name]="subscription.selected ? 'albums' : 'albums-outline'"
+        size="small"
+      ></ion-icon>
+      <ion-label> Subscription </ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="profile">
+      <ion-icon name="person-circle-outline" size="small"></ion-icon>
+      <ion-label> Users </ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

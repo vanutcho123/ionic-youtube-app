@@ -1,0 +1,23 @@
+<app-header></app-header>
+<ion-content>
+  <ul>
+    <li *ngFor="let item of videos">
+      <a href="#">
+        <img [src]="item.thumbnail" alt="" />
+        <div class="content">
+          <img [src]="item.thumbnail" alt="" />
+          <div class="group">
+            <h3>{{item.title}}</h3>
+            <div>
+              <h2>{{item.videoId}}</h2>
+              <p>●</p>
+              <span>{{item.views}} lượt xem</span>
+              <p>●</p>
+              <span>31 phút trước</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</ion-content>
