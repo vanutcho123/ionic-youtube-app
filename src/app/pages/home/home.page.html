@@ -1,17 +1,17 @@
 <app-header></app-header>
 <ion-content>
   <ul>
-    <li *ngFor="let item of videos">
+    <li *ngFor="let item of dataMovieNowPlaying">
       <a href="#">
-        <img [src]="item.thumbnail" alt="" />
+        <img [src]="baseImageUrl + '/w500' + item.backdrop_path" alt="" />
         <div class="content">
-          <img [src]="item.thumbnail" alt="" />
+          <img [src]="baseImageUrl + '/w500' + item.backdrop_path" alt="" />
           <div class="group">
-            <h3>{{item.title}}</h3>
+            <h3>{{item.original_title}}</h3>
             <div>
-              <h2>{{item.videoId}}</h2>
+              <!-- <h2>{{item.overview}}</h2> -->
               <p>●</p>
-              <span>{{item.views}} lượt xem</span>
+              <span>{{item.vote_average}} lượt xem</span>
               <p>●</p>
               <span>31 phút trước</span>
             </div>
